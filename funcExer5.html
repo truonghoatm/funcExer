@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    var b = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Usra Major","Leo"];
+    function isStar(str) {
+        var str;
+        var check = false;
+        for (var i = 0; i < a.length; i++){
+            if (str === a[i]) {
+                document.write(b[i]);
+                check = true;
+            }
+        }
+        if (check == false){
+            document.write('Khong tim thay');
+        }
+    }
+    var Str = prompt("Nhap ten ");
+    isStar(Str);
+
+</script>
+
+</body>
+</html>
